@@ -58,7 +58,7 @@ body{
     padding:25px;
     border-radius:15px;
     border:2px solid var(--borda);
-    box-shadow:0 0 20px rgba(65,105,225,.4);
+    box-shadow:0 0 20px rgba(149, 78, 151, 0.4);
 }
 
 .conteudo-senha label{
