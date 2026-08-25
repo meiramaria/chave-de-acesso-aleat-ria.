@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="conteudo">
+
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="Cadeado">
+            <h1 class="titulo-principal">Gerador de Senhas</h1>
+            <h3 class="titulo-secundario">
+                Gere instantaneamente uma senha aleatória e segura.
+            </h3>
+        </div>
+
+        <div class="conteudo-senha">
+            <label for="campo-senha">Senha</label>
+
+            <input
+                type="text"
+                id="campo-senha"
+                value="A8x@9Lm#P2Qr"
+                readonly>
+        </div>
+
+        <div class="parametro">
+
+            <h2 class="parametro-titulo">
+                Personalize sua senha
+            </h2>
+
+            <div class="parametro-coluna__senha">
+
+                <div class="parametro-senha">
+
+                    <h3 class="parametro-senha__titulo">
+                        Número de caracteres
+                    </h3>
+
+                    <div class="parametro-senha-botoes">
+
+                        <button class="parametro-senha__botao">−</button>
+
+                        <p class="parametro-senha__texto">
+                            12
+                        </p>
+
+                        <button class="parametro-senha__botao">+</button>
+
+                    </div>
+
+                </div>
+
+                <div class="parametro-senha">
+
+                    <h3 class="parametro-senha__titulo">
+                        Características da senha
+                    </h3>
+
+                    <div class="opcoes">
+                        <label><input type="checkbox" checked> Letras Maiúsculas</label>
+
+                        <label><input type="checkbox" checked> Letras Minúsculas</label>
+
+                        <label><input type="checkbox" checked> Números</label>
+
+                        <label><input type="checkbox" checked> Símbolos</label>
+                    </div>
+
+                </div>
+
+                <div class="parametro-senha">
+
+                    <h3 class="parametro-senha__titulo">
+                        Força da senha
+                    </h3>
+
+                    <div class="barra">
+                        <div class="barra-forca"></div>
+                    </div>
+
+                    <p class="nivel">
+                        Forte
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+<script src="script.js"></script>

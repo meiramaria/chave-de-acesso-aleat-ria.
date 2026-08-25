@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root{
+    --branco:#FFFFFF;
+    --cor-de-fundo:#364ba0;
+    --fundo-senha:#182e6b;
+    --fundo-texto:#2142A8;
+    --borda:#3e5bb3;
+    --hover:#2748C7;
+    --texto-claro:#DCE8FF;
+    --roboto:'Roboto', sans-serif;
+    --roboto-mono:'Roboto Mono', monospace;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--cor-de-fundo);
+    color:var(--branco);
+    font-family:var(--roboto);
+    padding:30px;
+}
+
+.conteudo{
+    max-width:1200px;
+    margin:auto;
+}
+
+.conteudo-titulo{
+    text-align:center;
+    margin-top:30px;
+}
+
+.conteudo-titulo img{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.titulo-principal{
+    font-size:42px;
+    font-family:var(--roboto-mono);
+    color:#A8C8FF;
+    margin-bottom:10px;
+}
+
+.titulo-secundario{
+    color:var(--texto-claro);
+    font-size:22px;
+}
+
+.conteudo-senha{
+    margin-top:50px;
+    background:var(--fundo-senha);
+    padding:25px;
+    border-radius:15px;
+    border:2px solid var(--borda);
+    box-shadow:0 0 20px rgba(65,105,225,.4);
+}
+
+.conteudo-senha label{
+    display:block;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+#campo-senha{
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    font-size:34px;
+    font-family:var(--roboto-mono);
+}
+
+#campo-senha:focus{
+    outline:none;
+}
+
+.parametro{
+    margin-top:35px;
+    background:var(--fundo-texto);
+    border:2px solid var(--borda);
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(65,105,225,.3);
+}
+
+.parametro-titulo{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+    font-family:var(--roboto-mono);
+}
+
+.parametro-coluna__senha{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.parametro-senha{
+    flex:1;
+    min-width:280px;
+}
+
+.parametro-senha__titulo{
+    text-align:center;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.parametro-senha-botoes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parametro-senha__botao{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    background:#4169E1;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.parametro-senha__botao:hover{
+    background:var(--hover);
+    transform:scale(1.05);
+}
+
+.parametro-senha__texto{
+    width:70px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.opcoes{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    font-size:18px;
+}
+
+.opcoes label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    accent-color:#7553ac;
+}
+
+.barra{
+    width:100%;
+    height:18px;
+    background:#4682B4;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.barra-forca{
+    width:100%;
+    height:100%;
+    background:#00FF66;
+}
+
+.nivel{
+    text-align:center;
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+
+.parametro-coluna__senha{
+    flex-direction:column;
+}
+
+}
