@@ -1,0 +1,1 @@
+# chave-de-acesso-aleat-ria.
